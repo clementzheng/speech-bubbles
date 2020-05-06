@@ -33,9 +33,38 @@
         justify-content: center;
       }
 
+      .pageLink {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 0vh;
+      }
+
       .frame img {
         display: flex;
         width: 75vw;
+      }
+
+      .downArrow {
+        position: absolute;
+        bottom: 20px;
+        width: 100vw;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        color: black;
+        text-decoration: none;
+      }
+
+      .upArrow {
+        position: absolute;
+        top: 20px;
+        width: 100vw;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        color: black;
+        text-decoration: none;
       }
 
     </style>
@@ -43,8 +72,45 @@
 
   <body class="">
     
-    <div class="frame"><img src="img/markClear.png"></div>
-    <div class="frame"><img src="img/markQuestion.png"></div>
+    <div class="frame">
+      <a class="pageLink" name="clear"></a>
+      <img src="img/markClear.png">
+      <a class="downArrow" href="#question">&DownArrowBar;</a>
+    </div>
+    
+    <div class="frame">
+      <a class="upArrow" href="#clear">&UpArrowBar;</a>
+      <a class="pageLink" name="question"></a>
+      <img src="img/markQuestion.png">
+      <a class="downArrow" href="#bulb">&DownArrowBar;</a>
+    </div>
+
+    <div class="frame">
+      <a class="upArrow" href="#question">&UpArrowBar;</a>
+      <a class="pageLink" name="bulb"></a>
+      <img src="img/markBulb.png">
+      <a class="downArrow" href="#heart">&DownArrowBar;</a>
+    </div>
+
+    <div class="frame">
+      <a class="upArrow" href="#bulb">&UpArrowBar;</a>
+      <a class="pageLink" name="heart"></a>
+      <img src="img/markHeart.png">
+      <a class="downArrow" href="#up">&DownArrowBar;</a>
+    </div>
+
+    <div class="frame">
+      <a class="upArrow" href="#heart">&UpArrowBar;</a>
+      <a class="pageLink" name="up"></a>
+      <img src="img/markUp.png">
+      <a class="downArrow" href="#down">&DownArrowBar;</a>
+    </div>
+
+    <div class="frame">
+      <a class="upArrow" href="#up">&UpArrowBar;</a>
+      <a class="pageLink" name="down"></a>
+      <img src="img/markDown.png">
+    </div>
     
     
   </body>
